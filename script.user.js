@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AM4 UI Enhancements
 // @namespace    http://tampermonkey.net/
-// @version      1.5
+// @version      1.6
 // @description  Usability and Immersion improvements for Airline Manager 4
 // @author       matt@mattbrauner.com & Haruko
 // @match        https://www.airlinemanager.com/*
@@ -12,25 +12,27 @@
 // @grant        GM_deleteValue
 // @grant        GM_xmlhttpRequest
 // @connect      raw.githubusercontent.com
+// @updateURL    https://raw.githubusercontent.com/lima12/am4-ui-enhancement-script/Master/script.user.js
+// @download     https://raw.githubusercontent.com/lima12/am4-ui-enhancement-script/Master/script.user.js
 // ==/UserScript==
 
 'use strict';
 
 const startupSound = new Audio(
-  'https://raw.githubusercontent.com/mb4828/am4-ui-enhancement-script/main/sounds/ding-long.mp3'
+  'https://raw.githubusercontent.com/lima12/am4-ui-enhancement-script/Master/sounds/ding-long.mp3'
 );
 const notificationSound = new Audio(
-  'https://raw.githubusercontent.com/mb4828/am4-ui-enhancement-script/main/sounds/ding-short.mp3'
+  'https://raw.githubusercontent.com/lima12/am4-ui-enhancement-script/Master/sounds/ding-short.mp3'
 );
 const takeoffSound = new Audio(
-  'https://raw.githubusercontent.com/mb4828/am4-ui-enhancement-script/main/sounds/takeoff.mp3'
+  'https://raw.githubusercontent.com/lima12/am4-ui-enhancement-script/Master/sounds/takeoff.mp3'
 );
 startupSound.volume = 0.1;
 notificationSound.volume = 0.1;
 takeoffSound.volume = 0.4;
 
 const RESOURCE_PRICE_SCHEDULE_URL =
-  'https://raw.githubusercontent.com/theheuman/am4-helper/main/resource-prices.json';
+  'https://raw.githubusercontent.com/lima12/am4-ui-enhancement-script/Master/resource-prices.json';
 const RESOURCE_MARKET_MODAL_ID = 'am4-resource-market-modal';
 const RESOURCE_MARKET_RESOURCES = ['fuel', 'co2'];
 const RESOURCE_PRICE_ALERTS = {
