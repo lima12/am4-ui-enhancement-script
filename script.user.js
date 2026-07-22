@@ -13,7 +13,7 @@
 // @grant        GM_xmlhttpRequest
 // @connect      raw.githubusercontent.com
 // @updateURL    https://raw.githubusercontent.com/lima12/am4-ui-enhancement-script/Master/script.user.js
-// @download     https://raw.githubusercontent.com/lima12/am4-ui-enhancement-script/Master/script.user.js
+// @downloadURL  https://raw.githubusercontent.com/lima12/am4-ui-enhancement-script/Master/script.user.js
 // ==/UserScript==
 
 'use strict';
